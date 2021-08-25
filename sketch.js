@@ -17,10 +17,11 @@ function setup() {
   world = engine.world;
 	
    //Create Player Base and Computer Base Object
-  computerBase = new ComputerBase(1500,650,400,400);
-  playerBase = new PlayerBase(500,650,400,400);
-  computerPlayer = new ComputerPlayer(1500,370,200,300);
-  player = new Player(500,370,200,300);
+  computerBase = new ComputerBase(width-300,random(450,height-300),180,150);
+  playerBase = new PlayerBase(300,random(450,height-300),180,150);
+  computerPlayer = new ComputerPlayer(width-280,computerBase.body.position.y-153,50,180);
+  player = new Player(285,playerBase.body.position.y-153,50,180);
+  
   
  }
 
